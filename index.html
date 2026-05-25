@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Image Gallery</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <h1>My Image Gallery</h1>
+
+  <div class="search-box">
+
+    <input 
+      type="text" 
+      id="searchInput"
+      placeholder="Search images..."
+    >
+
+  </div>
+
+  <div class="buttons">
+
+    <button class="filter-btn active" data-filter="all">All</button>
+
+    <button class="filter-btn" data-filter="nature">Nature</button>
+
+    <button class="filter-btn" data-filter="travel">Travel</button>
+
+    <button class="filter-btn" data-filter="family">Family</button>
+
+    <button class="filter-btn" data-filter="animals">Animals</button>
+
+    <button class="filter-btn" data-filter="cartoon">Cartoon</button>
+
+    <button class="filter-btn" data-filter="food">Food</button>
+
+  </div>
+
+  <div class="gallery">
+
+    <div class="card nature">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+      <div class="overlay">
+        <h3>Nature</h3>
+        <p>Beautiful mountain scenery</p>
+      </div>
+    </div>
+
+    <div class="card nature">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+      <div class="overlay">
+        <h3>Forest</h3>
+        <p>Peaceful green forest</p>
+      </div>
+    </div>
+
+    <div class="card travel">
+      <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e">
+      <div class="overlay">
+        <h3>Travel</h3>
+        <p>Adventure road trip</p>
+      </div>
+    </div>
+
+    <div class="card travel">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+      <div class="overlay">
+        <h3>Beach</h3>
+        <p>Ocean relaxation vibes</p>
+      </div>
+    </div>
+
+    <div class="card family">
+      <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300">
+      <div class="overlay">
+        <h3>Family</h3>
+        <p>Happy family moments</p>
+      </div>
+    </div>
+
+    <div class="card family">
+      <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846">
+      <div class="overlay">
+        <h3>Parents</h3>
+        <p>Family memories together</p>
+      </div>
+    </div>
+
+    <div class="card animals">
+      <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a">
+      <div class="overlay">
+        <h3>Dog</h3>
+        <p>Cute puppy portrait</p>
+      </div>
+    </div>
+
+    <div class="card animals">
+      <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5">
+      <div class="overlay">
+        <h3>Fox</h3>
+        <p>Wildlife photography</p>
+      </div>
+    </div>
+
+    <div class="card cartoon">
+      <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477">
+      <div class="overlay">
+        <h3>Cartoon</h3>
+        <p>Creative digital artwork</p>
+      </div>
+    </div>
+
+    <div class="card cartoon">
+      <img src="https://images.unsplash.com/photo-1608889175123-8ee362201f81">
+      <div class="overlay">
+        <h3>Animation</h3>
+        <p>Colorful animated art</p>
+      </div>
+    </div>
+
+    <div class="card food">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+      <div class="overlay">
+        <h3>Food</h3>
+        <p>Delicious healthy meal</p>
+      </div>
+    </div>
+
+    <div class="card food">
+      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+      <div class="overlay">
+        <h3>Salad</h3>
+        <p>Fresh organic vegetables</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="lightbox" id="lightbox">
+
+    <span class="close" id="closeBtn">&times;</span>
+
+    <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+
+    <img id="lightboxImg">
+
+    <button class="nav-btn next" id="nextBtn">&#10095;</button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
